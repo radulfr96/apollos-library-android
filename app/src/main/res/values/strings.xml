@@ -2,5 +2,11 @@
     <string name="app_name">Apollo\'s Library</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_books">Books</string>
+    <string name="title_authors">Authors</string>
+    <string name="title_publishers">Publishers</string>
+    <string name="title_orders">Orders</string>
+    <string name="title_my_account">My Account</string>
+    <string name="title_bookstores">Book Stores</string>
+    <string name="title_logout">Logout</string>
 </resources>

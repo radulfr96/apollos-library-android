@@ -2,18 +2,36 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
-
-    <item
         android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/ic_home_24px"
         android:title="@string/title_dashboard" />
-
     <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:id="@+id/navigation_orders"
+        android:icon="@drawable/ic_receipt_24px"
+        android:title="@string/title_orders" />
+    <item
+        android:id="@+id/navigation_book_stores"
+        android:icon="@drawable/ic_storefront_48px"
+        android:title="@string/title_bookstores" />
+    <item
+        android:id="@+id/navigation_books"
+        android:icon="@drawable/ic_book_48px"
+        android:title="@string/title_books" />
+    <item
+        android:id="@+id/navigation_publishers"
+        android:icon="@drawable/ic_domain_48px"
+        android:title="@string/title_publishers" />
+    <item
+        android:id="@+id/navigation_authors"
+        android:icon="@drawable/ic_person_48px"
+        android:title="@string/title_books" />
+    <item
+        android:id="@+id/navigation_my_account"
+        android:icon="@drawable/ic_manage_accounts_48px"
+        android:title="@string/title_my_account" />
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/ic_logout_48px"
+        android:title="@string/title_logout" />
 
 </menu>
