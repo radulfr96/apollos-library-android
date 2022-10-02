@@ -9,7 +9,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.apolloslibrary.R
-import com.example.apolloslibrary.placeholder.PlaceholderContent
 
 /**
  * A fragment representing a list of Items.
@@ -39,20 +38,20 @@ class SettingsItemFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MySettingsItemRecyclerViewAdapter(new List() {
-                    
-                })
+                adapter = SettingItemRecyclerViewAdapter(
+                    listOf(
+                        SettingItem(getString(R.string.title_my_account), 0),
+                        SettingItem(getString(R.string.title_logout), 1),
+                    )
+                );
             }
         }
         return view
     }
 
     companion object {
+        const val ARG_COLUMN_COUNT = "1"
 
-        // TODO: Customize parameter argument names
-        const val ARG_COLUMN_COUNT = "column-count"
-
-        // TODO: Customize parameter initialization
         @JvmStatic
         fun newInstance(columnCount: Int) =
             SettingsItemFragment().apply {

@@ -4,22 +4,19 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
-
-import com.example.apolloslibrary.placeholder.PlaceholderContent.PlaceholderItem
-import com.example.apolloslibrary.databinding.MoreItemBinding
+import com.example.apolloslibrary.databinding.SettingItemBinding
 
 /**
- * [RecyclerView.Adapter] that can display a [PlaceholderItem].
- * TODO: Replace the implementation with code for your data type.
+ * View Adapted user to display more navigation options.
  */
-class MySettingsItemRecyclerViewAdapter(
-    private val values: List<PlaceholderItem>
-) : RecyclerView.Adapter<MySettingsItemRecyclerViewAdapter.ViewHolder>() {
+class SettingItemRecyclerViewAdapter(
+    private val values: List<SettingItem>
+) : RecyclerView.Adapter<SettingItemRecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         return ViewHolder(
-            MoreItemBinding.inflate(
+            SettingItemBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
@@ -30,12 +27,12 @@ class MySettingsItemRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = values[position]
-        holder.contentView.text = item.content
+        holder.contentView.text = item.text
     }
 
     override fun getItemCount(): Int = values.size
 
-    inner class ViewHolder(binding: MoreItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(binding: SettingItemBinding) : RecyclerView.ViewHolder(binding.root) {
         val contentView: TextView = binding.content
 
         override fun toString(): String {
